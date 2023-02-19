@@ -1,17 +1,17 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Fading Revelations JAVA"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "fadingrev"
 
 #your name
-author: "You"
+author: "Fresh791"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "fadingrev.FadingRevelations"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "Trying to port FR to java."
 
 #the mod version
 version: 1.0
