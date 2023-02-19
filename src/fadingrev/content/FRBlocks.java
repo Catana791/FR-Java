@@ -86,7 +86,7 @@ public class FRBlocks{
       
       shoot = new ShootAlternate(){{
 				shots = 3;
-        spread = 5f
+        spread = 5f;
 				shotDelay = 15f;
 			}};
       
