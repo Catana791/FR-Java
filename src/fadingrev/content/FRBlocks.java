@@ -44,7 +44,6 @@ public class FRBlocks{
                     width = 8f;
                     height = 8f;
                     lifetime = 50f;
-                    hitSize: 8f;
                 }},
                 Items.graphite, new BasicBulletType(3, 17) {{
                     width = 8f;
