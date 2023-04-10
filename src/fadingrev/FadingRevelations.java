@@ -17,7 +17,6 @@ public class FadingRevelations extends Mod{
     public void loadContent(){
 
         FRBlocks.load();
-        FRTechTree.load();
       
     }
 
