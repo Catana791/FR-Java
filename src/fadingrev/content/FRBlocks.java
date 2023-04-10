@@ -19,7 +19,7 @@ public class FRBlocks{
 
         //defense
         trio = new ItemTurret("trio") {{
-            requirements(Category.turret, with(Items.copper, 60, Items.lead, 35));
+            requirements(Category.turret, with(Items.copper, 70, Items.lead, 35));
 
             health = 500;
             reload = 48f;
@@ -44,8 +44,46 @@ public class FRBlocks{
                     width = 8f;
                     height = 8f;
                     lifetime = 50f;
+                    hitSize: 8f;
+                }},
+                Items.graphite, new BasicBulletType(3, 17) {{
+                    width = 8f;
+                    height = 8f;
+                    lifetime = 50f;
+                    hitSize = 8f;
+                    ammoMultiplier = 3;
+                }},
+                Items.pyratite, new BasicBulletType(3, 16) {{
+                    width = 8f;
+                    height = 8f;
+                    lifetime = 50f;
+                    hitSize = 8f;
+                    ammoMultiplier = 3;
+                    status = StatusEffects.burning;
+                    statusDuration = 60f * 0.5;
+                }},
+                Items.silicon = new BasicBulletType(3, 18) {{
+                    width = 8f;
+                    height = 8f;
+                    lifetime = 50f;
+                    hitSize = 8f;
+                    ammoMultiplier = 7;
+                    homingPower = 0.9f;
+                    homingRange = 120f;
                 }}
             );
+            drawer = new DrawTurret(){{
+                parts.add(new RegionPart("-back"){{
+                    progress = PartProgress.warmup;
+                    mirror = true;
+                    moveX = 1.35f;
+                    moveY = 1.5f;
+                    moveRot = -22f;
+                    under = true;
+                    moves.add(new PartMove(PartProgress.recoil, 0, -2, -32));
+                }});
+            }};
+            coolant = consumeCoolant(0.1f);
         }};
     }
 }
