@@ -6,6 +6,8 @@ import mindustry.entities.pattern.*;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.blocks.defense.turrets.*;
+import mindustry.entities.part.DrawPart.*;
+import mindustry.entities.part.*;
 
 import static mindustry.type.ItemStack.with;
 
