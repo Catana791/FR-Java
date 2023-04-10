@@ -8,6 +8,7 @@ import mindustry.world.Block;
 import mindustry.world.blocks.defense.turrets.*;
 import mindustry.entities.part.DrawPart.*;
 import mindustry.entities.part.*;
+import mindustry.world.draw.*;
 
 import static mindustry.type.ItemStack.with;
 
@@ -61,9 +62,9 @@ public class FRBlocks{
                     hitSize = 8f;
                     ammoMultiplier = 3;
                     status = StatusEffects.burning;
-                    statusDuration = 60f * 0.5;
+                    statusDuration = 30f;
                 }},
-                Items.silicon = new BasicBulletType(3, 18) {{
+                Items.silicon, new BasicBulletType(3, 18) {{
                     width = 8f;
                     height = 8f;
                     lifetime = 50f;
